@@ -1,0 +1,89 @@
+<!--
+    Group Member: Aaron Elliston
+    ID#: 2409567
+    Lab Class: Friday 12-2
+    Administrative Interface Developer (Student 3)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../css/style.css">
+    <title>Administrative</title>
+</head>
+<body>
+    <header>
+        <h4>Old Harbour High School</h4>
+    </header>
+    <h2>Student Registration</h2>
+    <form action="" id="student-form"> 
+        <label for="studentID">Student ID:</label>
+        <input type="text" id="studentID" name="studentID" pattern="^STU-\d{4}-\d{3}$" placeholder="STU-0000-000" title="Format must be STU-YYYY-###" required><br><br>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required><br><br>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required><br><br>
+        <label for="cohort">Cohort</label>
+        <select name="cohort" id="cohort">
+            <option value="spring">Spring 2026</option>
+            <option value="fall">Fall 2026</option>
+        </select>
+        <button type="submit" id="submit-btn">Add Student</button>
+    </form>
+
+    <table id="student-table">
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Full Name</th>
+                <th>Cohort</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+           <section>
+            <h2>Academic Matrix - Student Grade Management</h2>
+
+            <form action="" id="grade-form">
+                <label for="grade-student-select">Select Student:</label>
+                <select name="grade-student-select" id="grade-student-select" required>
+                    <option value="">-- Choose a student --</option>
+                </select>
+                <label for="subject-select">Subject:</label>
+                <select name="subject-select" id="subject-select" required>
+                    <option value="">-- Choose Subject --</option>
+                    <option value="Programming">Programming</option>
+                    <option value="Statistics">Statistics</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Physics">Physcis</option>
+                </select>
+
+                <label for="grade-score">Score (0-100):</label>
+                <input type="number" id="grade-score" min="0" max="100" required>
+                <button type="submit" id="grade-submit-btn">Save Grade</button>
+            </form>
+
+            <table id="grade-table">
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Student Name</th>
+                        <th>Subject</th>
+                        <th>Score</th>
+                        <th>Letter Grade</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </section>
+    <script src="admin.js"></script>
+</body>
+</html>
