@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+			<!-- Will adjust to different screen sizes -->
+			<!--width-device-width sets the thing to match the wdith of the 			device-->
+
+
+    <title> Finacial Records | Old Harbour High School </title>
+
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+
+<body>
+
+    <!-- Sabrina Edwards # -->
+    <!--Aaron Elliston # -->
+    <!--Monecia Hamilton #2409578 -->
+    <!--Josan Small #-->
+
+<!--Ms. Sirsha Badhika Firday 12-2pm-->
+
+
+    <!-- Website Header -->
+
+<header>
+ <h4>Old Harbour High School</h4>
+
+        <!-- Navigation Bar -->
+	<!-- allows smooth transitioning between different parts of the wbsite-->
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="login.html">Login</a>
+        </nav>
+
+    </header>
+
+
+<main>
+  <!-- Financial Records Introduction -->
+        <section class="finance">
+
+            <h4><b><i>Student Financial Records</i></b></h4>
+
+            <p>
+                View student tuition payments,
+                outstanding balances and payment statuses.
+            </p>
+
+        </section>
+
+
+        <!-- Financial Records Section -->
+
+        <!-- Record Student Payment -->
+        <section class="financial-records">
+
+            <h4><i>Record Student Payment</i></h4>
+
+            <form id="payment-form">
+
+                <label for="finance-student">Select Student:</label>
+                <select id="finance-student" required>
+                    <option value="">-- Select Student --</option>
+                </select>
+
+                <label for="tuition-amount">Tuition Amount (JMD):</label>
+                <input type="number" id="tuition-amount"
+                       min="0.01" step="0.01" required>
+
+                <label for="payment-amount">Payment Amount (JMD):</label>
+                <input type="number" id="payment-amount"
+                       min="0.01" step="0.01" required>
+
+                <label for="payment-date">Payment Date:</label>
+                <input type="date" id="payment-date" required>
+
+                <button type="submit">Save Payment</button>
+
+                <p id="payment-message"></p>
+
+            </form>
+
+        </section>
+
+        <section class="financial-records">
+
+            <h4><i>Tuition Payment Records</i></h4>
+
+            <!-- Search Financial Records -->
+            <label for="finance-search">
+                Search Student:
+            </label>
+
+            <input type="search"
+                   id="finance-search"
+                   placeholder="Search by student name or ID">
+
+
+
+  <!-- Financial Records Table -->
+            <div class="table-container">
+
+                <table id="finance-table">
+
+                    <thead>
+
+                        <tr>
+                            <th>Student ID</th>
+                            <th>Student Name</th>
+                            <th>Tuition (JMD)</th>
+                            <th>Amount Paid</th>
+                            <th>Balance</th>
+                            <th>Status</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="finance-list">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+
+  <!-- Financial Summary -->
+        <section class="financial-summary">
+
+            <h4><i>Financial Summary</i></h4>
+
+            <p>
+                <b>Total Tuition:</b>
+                <span id="total-tuition">J$60,000</span>
+            </p>
+
+            <p>
+                <b>Total Payments:</b>
+                <span id="total-payments">J$30,000</span>
+            </p>
+
+            <p>
+                <b>Outstanding Balance:</b>
+                <span id="total-balance">J$30,000</span>
+            </p>
+
+        </section>
+
+
+        <!-- Financial Report -->
+        <section class="financial-report">
+
+            <h4><i>Financial Report</i></h4>
+
+            <p>
+                Print the financial records for reporting.
+            </p>
+
+            <button type="button" id="print-report">
+                Print Report
+            </button>
+
+        </section>
+</main>
+
+<!-- Website Footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 Old Harbour High School.
+            Educational Group Project.
+        </p>
+
+        <p> 33 South Street Old Harbour St. Catherine, Jamaica</p>
+
+    </footer>
+
+
+    <!-- Linking JavaScript -->
+    <script src="../js/main.js" defer></script>
+
+</body>
+</html>
+
+
+
+
+
